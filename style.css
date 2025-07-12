@@ -1,44 +1,72 @@
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.heading{
-    background-color: rgba(189, 18, 252, 0.991);
-    border: solid black 3px;
-    width: 400px;
-    height: 250px;
-    text-align: center;
-    align-content: center;
-    padding: 10px;
-    
+:root{
+    --colorb :  rgb(145, 1, 255);
 }
 
-.firstPara{
-    background-color: rgb(215, 164, 97);
-    border: solid black 3px;
-    width: 400px;
-
+#image1{
+    height:500px;
+    float: right;
 }
 
-.secondPara{
-    background-color: skyblue;
-    border: solid black 3px;
-    width: 400px;
+#content1{
+    text-align: justify;
+    padding: 5px;
+    margin: 10px;
 }
-
-
-.thirdPara{
-    background-color: rgb(220, 255, 151);
-    border: solid black 3px;
-    width: 400px;
-}
-
-
 .container{
-    background-color: rgb(255, 66, 66);
-    width: 99vw;
-    
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    justify-content: space-around;
 }
+
+
+
+
+
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: var(--colorb);
+    border: 1px black solid;
+    overflow: none;
+    box-shadow: 5px 5px 15px grey;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border: 1px black solid;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    border: 1px black solid;
+}
+.box4{
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+    border: 1px black solid;
+}
+
+@media (max-width:800px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
