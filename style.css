@@ -1,4 +1,4 @@
-
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +25,9 @@
     flex-direction: row;
     height: 1000px;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 
@@ -68,5 +71,77 @@
     }
 }
 
+.box1{
+    position: relative;
+    animation-name: b1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes b1 {
+    from{
+        top:0px;
+        left:-400px;
+        opacity: 0;
+
+    }
+    to{
+        top:0px;
+        left:0px;
+        opacity: 1;
+    }
+    
+}
 
 
+ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .container{
+    width:100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.mainCard{
+    background-color: whitesmoke;
+    width:350px;
+    height: 550px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cardImage{
+    width: 349px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height:175px
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.para1{
+    padding :5px;
+    text-align: justify;
+}
+
+.plan{
+    width :300px;
+    background-color: red;
+    height: 80px;
+    margin: auto;
+}
