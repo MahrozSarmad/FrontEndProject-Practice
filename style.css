@@ -1,147 +1,196 @@
-/* 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --colorb :  rgb(145, 1, 255);
+.colourFul{
+background: #833AB4;
+background: linear-gradient(268deg, rgba(131, 58, 180, 1) 0%, rgba(255, 41, 41, 1) 48%, rgba(252, 176, 69, 1) 100%);
+width:100vw;
+height: 55vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+  /* font-optical-sizing: auto;
+  font-style: normal; */
 }
 
-#image1{
-    height:500px;
-    float: right;
-}
-
-#content1{
-    text-align: justify;
-    padding: 5px;
-    margin: 10px;
-}
-.container{
-    background-color: wheat;
-    display: flex;
-    flex-direction: row;
-    height: 1000px;
-    justify-content: space-around;
-    position: relative;
-    overflow: hidden;
-    
-}
-
-
-
-
-
-.box1{
-    height: 200px;
-    width: 200px;
-    background-color: var(--colorb);
-    border: 1px black solid;
-    overflow: none;
-    box-shadow: 5px 5px 15px grey;
-    text-shadow: 5px 5px 5px black;
+.mainHead{
     color: white;
-    font-family: "Playfair Display", serif;
-}
-.box2{
-    height: 200px;
-    width: 200px;
-    background-color: green;
-    border: 1px black solid;
-}
-.box3{
-    height: 200px;
-    width: 200px;
-    background-color: purple;
-    border: 1px black solid;
-}
-.box4{
-    height: 200px;
-    width: 200px;
-    background-color: skyblue;
-    border: 1px black solid;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    margin:10px;
 }
 
-@media (max-width:800px) {
-    .container{
-        flex-direction: column;
-        align-items: center;
-    }
+.headPara{
+    width:50vw;
+    font-size: 30px;
+    font-weight: lighter;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ; */
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    text-align:center;
+    margin:10px
+    
+}
+.applyNow{
+    background-color: white;
+    color: black;
+    width:110px;
+    height:40px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 20px;
+    transition: all;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: linear;
 }
 
-.box1{
-    position: relative;
-    animation-name: b1;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+.applyNow:hover{
+    background-color: rgb(217, 217, 217);
+    transform: scale(1.05);
+    font-weight: bold;
 }
 
-@keyframes b1 {
-    from{
-        top:0px;
-        left:-400px;
-        opacity: 0;
+.groovy{
+    font-family:cursive;
+     transition: all;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: linear; 
+    font-size: 70px;
+}
 
-    }
-    to{
-        top:0px;
-        left:0px;
-        opacity: 1;
-    }
+.groovy:hover{
+    color: rgb(0, 0, 0);
+    
     
 }
 
-
- */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
- .container{
+.threeParts{
     width:100vw;
-    height: 100vh;
-    background-color: whitesmoke;
+    height:75px;
+    background-color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
- }
-.mainCard{
-    background-color: whitesmoke;
-    width:350px;
-    height: 550px;
-    border-radius: 20px;
-    border: 2px solid black;
+}
+.part{
+    width:33.3%;
+    height: 75px;
+    background-color: white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px black solid;
+    text-align: center ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    font-size: 14px;
+     font-family:Arial, Helvetica, sans-serif;
+    /* transition */
+      /* transition: all;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: linear;  */
+}
+/* .part:hover{
+    font-size: 15px;
+} */
+
+#part1{
+    border-bottom-left-radius: 30px;
+}
+
+#part3{
+    border-bottom-right-radius: 30px;
+}
+
+.footer{
+    width:100vw;
     
-}
-.cardImage{
-    width: 349px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height:175px
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
 }
 
-.heading{
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.footerPart1{
+    width:400px;
+    height: 270px;
+    background-color: black;
+    color: white;
+    border: 1px black solid;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.footerPart2{
+     width:250px;
+    height: 270px;
+    background-color: black;
+    color: white;
+    border: 1px black solid;
+    padding: 20px;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size: 13px;
+     padding-top: 40px;
+     
+}
+
+.lItems{
+    margin-top: 5px;
+    list-style-type: none;
+
+      transition: all;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: linear; 
+    
+   
+}
+
+.lItems:hover{
+    color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+#emailBox{
+    width:320px;
+    height: 42px;
+    color: black;
+    background-color: black;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+
+}
+
+input::placeholder {
+  color: white; /* Or any color you want */
+  opacity: 1;  /* Optional: makes it fully visible in some browsers */
+}
+
+.final-foot{
+    background-color: black;
+    color: white;
     text-align: center;
-    font-size: 30px;
-    padding-top: 30px;
-}
-.para1{
-    padding :5px;
-    text-align: justify;
-}
+    height: 40px;
+     font-family:Arial, Helvetica, sans-serif;
 
-.plan{
-    width :300px;
-    background-color: red;
-    height: 80px;
-    margin: auto;
 }
